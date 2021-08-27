@@ -25,7 +25,7 @@ namespace ShopManagement.Application
             //var slug = command.Slug.Slugify();
 
             var productCategory = new ProductCategory(command.Name, command.Description, command.Picture,
-                command.PictureAlt, command.PictureTitle, slug, command.MetaDescription, command.KeyWords);
+                command.PictureAlt, command.PictureTitle, slug, command.MetaDescription, command.Keywords);
 
             _prodcutCategoryRepository.Create(productCategory);
             _prodcutCategoryRepository.SaveChanges();
@@ -46,7 +46,7 @@ namespace ShopManagement.Application
             var slug = GenerateSlug.Slugify(command.Slug);
 
             productCategory.Edit(command.Name, command.Description, command.Picture, command.PictureAlt,
-                command.PictureTitle, slug, command.MetaDescription, command.KeyWords);
+                command.PictureTitle, slug, command.MetaDescription, command.Keywords);
             _prodcutCategoryRepository.SaveChanges();
 
             return operation.Successed();

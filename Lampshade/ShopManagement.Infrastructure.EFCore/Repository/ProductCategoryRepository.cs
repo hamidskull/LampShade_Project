@@ -24,7 +24,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                KeyWords = x.KeyWords,
+                Keywords = x.KeyWords,
                 MetaDescription = x.MetaDescription,
                 Slug = x.Slug
             }).FirstOrDefault(x => x.Id == id);

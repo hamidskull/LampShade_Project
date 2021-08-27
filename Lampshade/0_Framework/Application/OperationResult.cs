@@ -3,21 +3,21 @@
     public class OperationResult
     {
         public string Message { get; set; }
-        public bool IsSuccessed { get; set; }
+        public bool IsSucceeded { get; set; }
         public OperationResult()
         {
-            IsSuccessed = false;
+            IsSucceeded = false;
         }
 
         public OperationResult Successed(string message = "عملیات با موفقیت انجام شد")
         {
-            IsSuccessed = true;
+            IsSucceeded = true;
             Message = message;
             return this;
         }
         public OperationResult Failed(string message)
         {
-            IsSuccessed = false;
+            IsSucceeded = false;
             Message = message;
             return this;
         }

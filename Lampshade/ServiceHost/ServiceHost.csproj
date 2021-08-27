@@ -5,27 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Areas\Administration\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ShopManagement.Configuration\ShopManagement.Configuration.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Areas\Administration\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Areas\Administration\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Areas\Administration\Pages\Index.cshtml" />
     <None Include="wwwroot\AdminTheme\assets\bootstrap-inputmask\bootstrap-inputmask.min.js" />
     <None Include="wwwroot\AdminTheme\assets\bootstrap-wysihtml5\bootstrap-wysihtml5.js" />
     <None Include="wwwroot\AdminTheme\assets\bootstrap-wysihtml5\wysihtml5-0.3.0.js" />
@@ -176,6 +167,9 @@
     <None Include="wwwroot\AdminTheme\assets\timepicker\bootstrap-datepicker.js" />
     <None Include="wwwroot\AdminTheme\assets\timepicker\bootstrap-timepicker.min.js" />
     <None Include="wwwroot\AdminTheme\assets\toggles\toggles.min.js" />
+    <None Include="wwwroot\AdminTheme\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\AdminTheme\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\AdminTheme\fonts\Material-Design-Iconic-Font.svg" />
   </ItemGroup>
 
 </Project>
