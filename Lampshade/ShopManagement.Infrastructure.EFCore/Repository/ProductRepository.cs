@@ -48,13 +48,18 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Name = x.Name,
                 UnitPrice = x.UnitPrice,
                 Category = x.Category.Name,
-                CategoryId = x.CategoryId
+                CreationDate = x.CreationDate.ToString(),
+                Picture = x.Picture,
+                CategoryId = x.CategoryId,
+                IsInStock = x.IsInStock
             });
 
-            if (string.IsNullOrWhiteSpace(searchModel.Name))
+            if (!string.IsNullOrWhiteSpace(searchModel.Name))
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
-            if (string.IsNullOrWhiteSpace(searchModel.Code))
+
+            if (!string.IsNullOrWhiteSpace(searchModel.Code))
                 query = query.Where(x => x.Code.Contains(searchModel.Code));
+
             if (searchModel.CategoryId != 0)
                 query = query.Where(x => x.CategoryId == searchModel.CategoryId);
 

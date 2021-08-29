@@ -14,7 +14,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         {
             _context = context;
         }
-         public EditProductCategory GetDetails(long id)
+        public EditProductCategory GetDetails(long id)
         {
             return _context.ProductCategories.Select(x => new EditProductCategory
             {
@@ -30,6 +30,14 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x => x.Id == id);
         }
 
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return _context.ProductCategories.Select(x => new ProductCategoryViewModel
+            {
+                Name = x.Name,
+                Id = x.Id
+            }).ToList();
+        }
 
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
         {
