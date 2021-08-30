@@ -43,10 +43,10 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
         }
         public PartialViewResult OnGetEdit(long id)
         {
-            var product = _productPictureApplication.GetDetails(id);
-            product.Products = _prodcutApplication.GetProduct();
+            var productPicture = _productPictureApplication.GetDetails(id);
+            productPicture.Products = _prodcutApplication.GetProduct();
 
-            return Partial("./Edit", product);
+            return Partial("./Edit", productPicture);
         }
         public JsonResult OnPostEdit(EditProductPicture command)
         {
