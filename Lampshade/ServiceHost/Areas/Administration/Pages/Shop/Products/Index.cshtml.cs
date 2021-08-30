@@ -14,9 +14,9 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
         public SelectList productCategoryList;
         public List<ProductViewModel> productList;
 
-        private readonly IProdcutCategoryApplication _prodcutCategoryApplication;
+        private readonly IProductCategoryApplication _prodcutCategoryApplication;
         private readonly IProductApplication _productApplication;
-        public IndexModel(IProdcutCategoryApplication prodcutCategoryApplication, IProductApplication productApplication)
+        public IndexModel(IProductCategoryApplication prodcutCategoryApplication, IProductApplication productApplication)
         {
             _prodcutCategoryApplication = prodcutCategoryApplication;
             _productApplication = productApplication;

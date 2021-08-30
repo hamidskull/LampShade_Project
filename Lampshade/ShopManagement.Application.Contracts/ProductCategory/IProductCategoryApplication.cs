@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ShopManagement.Application.Contracts.ProductCategory
 {
-    public interface IProdcutCategoryApplication
+    public interface IProductCategoryApplication
     {
         OperationResult Create(CreateProductCategory command);
         OperationResult Edit(EditProductCategory command);

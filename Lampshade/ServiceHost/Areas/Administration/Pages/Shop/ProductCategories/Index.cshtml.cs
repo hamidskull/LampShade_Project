@@ -9,8 +9,8 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
     {
         public ProductCategorySearchModel SearchModel { get; set; }
         public List<ProductCategoryViewModel> productCategoryList;
-        private readonly IProdcutCategoryApplication _prodcutCategoryApplication;
-        public IndexModel(IProdcutCategoryApplication prodcutCategoryApplication)
+        private readonly IProductCategoryApplication _prodcutCategoryApplication;
+        public IndexModel(IProductCategoryApplication prodcutCategoryApplication)
         {
             _prodcutCategoryApplication = prodcutCategoryApplication;
         }
