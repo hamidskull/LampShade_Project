@@ -174,3 +174,6 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Ar
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Edit.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Index.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\_Menu.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\01_LampshadeQuery.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\01_LampshadeQuery.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slide\_Slide.cshtml.g.cs
