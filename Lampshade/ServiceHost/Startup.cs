@@ -1,3 +1,4 @@
+using DiscountManagement.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,8 @@ namespace ServiceHost
         {
             string conString = Configuration.GetConnectionString("conString");
 
-            ShopManagementBootstapper.Configur(services, conString);
+            ShopManagementBootstrapper.Configur(services, conString);
+            DiscountManagementBootstrapper.Configure(services, conString);
 
             services.AddRazorPages();
         }

@@ -2,11 +2,13 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debu
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\0_Framework.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Domain.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\0_Framework.pdb
@@ -21,5 +23,3 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debu
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
-C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.dll
-C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.pdb
