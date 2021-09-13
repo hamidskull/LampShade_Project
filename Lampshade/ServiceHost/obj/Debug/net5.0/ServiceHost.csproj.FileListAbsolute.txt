@@ -212,3 +212,4 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Ar
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\OperationLog.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoriesWithProducts\_ProductCategoriesWithProducts.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestProducts\_LatestProducts.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs

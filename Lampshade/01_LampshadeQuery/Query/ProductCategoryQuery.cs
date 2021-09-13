@@ -110,5 +110,50 @@ namespace _01_LampshadeQuery.Query
                 Slug = x.Slug
             }).ToList();
         }
+
+        public ProductCategoryQueryModel GetProductCategoryProductsBy(string slug)
+        {
+            var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice }).ToList();
+            var productDiscountRate = _discountContext.CustomerDiscounts.Select(x =>
+            new { x.ProductId, x.DiscountRate, x.EndDate }).ToList();
+
+            var category = _context.ProductCategories.Include(x => x.Products).ThenInclude(x => x.Category)
+                .Select(x => new ProductCategoryQueryModel
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Description = x.Description,
+                    Keywords = x.KeyWords,
+                    MetaDescription = x.MetaDescription,
+                    Slug = x.Slug,
+                    Products = MapProducts(x.Products)
+                }).FirstOrDefault(x => x.Slug == slug);
+
+            category.Products.ForEach(p =>
+            {
+                var inventoyProduct = inventory.FirstOrDefault(x => x.ProductId == p.Id);
+                if (inventoyProduct != null)
+                {
+                    var price = inventoyProduct.UnitPrice;
+                    p.Price = price.ToMoney();
+
+                    var productDisRate = productDiscountRate.FirstOrDefault(x => x.ProductId == p.Id);
+                    if (productDisRate != null)
+                    {                                                        
+                        p.DiscountExpireDate = productDisRate.EndDate.ToDiscountFormat();
+
+                        var discountRate = productDisRate.DiscountRate;
+                        p.DiscountRate = discountRate;
+
+                        p.HasDiscount = p.DiscountRate > 0;
+
+                        var discountAmount = Math.Round((price * discountRate) / 100);
+                        p.PriceWithDiscount = (price - discountAmount).ToMoney();
+                    }
+                }
+            });
+
+            return category;
+        }
     }
 }
