@@ -18,10 +18,10 @@ namespace InventoryManagement.Application
         public OperationResult Create(CreateInventory command)
         {
             var operation = new OperationResult();
-            if (_inventoryRepository.Exists(x => x.ProductId == command.ProdcutId))
+            if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId))
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            var inventory = new Inventory(command.ProdcutId, command.UnitPrice);
+            var inventory = new Inventory(command.ProductId, command.UnitPrice);
 
             _inventoryRepository.Create(inventory);
             _inventoryRepository.SaveChanges();
@@ -36,10 +36,10 @@ namespace InventoryManagement.Application
             if (inventory == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            if (_inventoryRepository.Exists(x => x.ProductId == command.ProdcutId && x.Id != command.Id))
+            if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
-            inventory.Edit(command.ProdcutId, command.UnitPrice);
+            inventory.Edit(command.ProductId, command.UnitPrice);
             _inventoryRepository.SaveChanges();
 
             return operation.Successed();
@@ -48,6 +48,11 @@ namespace InventoryManagement.Application
         public EditInventory GetDetails(long id)
         {
             return _inventoryRepository.GetDetails(id);
+        }
+
+        public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
+        {
+            return _inventoryRepository.GetOperationLog(inventoryId);
         }
 
         public OperationResult Increase(IncreaseInventory command)

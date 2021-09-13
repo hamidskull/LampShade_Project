@@ -9,8 +9,6 @@ namespace ShopManagement.Domain.ProductAgg
     {
         public string Name { get; private set; }
         public string Code { get; private set; }
-        public double UnitPrice { get; private set; }
-        public bool IsInStock { get; private set; }
         public string ShortDescription { get; private set; }
         public string Description { get; private set; }
         public string Picture { get; private set; }
@@ -25,13 +23,12 @@ namespace ShopManagement.Domain.ProductAgg
 
         protected Product() { }
 
-        public Product(string name, string code, double unitPrice, string shortDescription, string description,
+        public Product(string name, string code, string shortDescription, string description,
             string picture, string pictureAlt, string pictureTitle, string slug, string metaDescription,
             string keyWords, long categoryId)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
             Picture = picture;
@@ -41,16 +38,14 @@ namespace ShopManagement.Domain.ProductAgg
             MetaDescription = metaDescription;
             Keywords = keyWords;
             CategoryId = categoryId;
-            IsInStock = true;
             ProductPictures = new List<ProductPicture>();
         }
-        public void Edit(string name, string code, double unitPrice, string shortDescription, string description,
+        public void Edit(string name, string code,  string shortDescription, string description,
             string picture, string pictureAlt, string pictureTitle, string slug, string metaDescription,
             string keyWords, long categoryId)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
             Picture = picture;
@@ -60,14 +55,6 @@ namespace ShopManagement.Domain.ProductAgg
             MetaDescription = metaDescription;
             Keywords = keyWords;
             CategoryId = categoryId;
-        }
-        public void InStock()
-        {
-            IsInStock = true;
-        }
-        public void NotInStock()
-        {
-            IsInStock = false;
         }
     }
 }

@@ -1,7 +1,7 @@
-﻿using _0_Framework.Infrastructure;
+﻿using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contracts.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,9 +28,26 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
             return _context.Inventory.Select(x => new EditInventory
             {
                 Id = x.Id,
-                ProdcutId = x.ProductId,
+                ProductId = x.ProductId,
                 UnitPrice = x.UnitPrice
             }).FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
+        {
+            return _context.Inventory.FirstOrDefault(x => x.Id == inventoryId)
+                .Operations.Select(x => new InventoryOperationViewModel
+                {
+                    Count = x.Count,
+                    CurrentCount = x.CurrentCount,
+                    Id = x.Id,
+                    Description = x.Description,
+                    Operation = x.Operation,
+                    OperationDate = x.OperationDate.ToFarsi(),
+                    Operator = "مدیر سیستم",
+                    OperatorId = x.OperatorId,
+                    OrderId = x.OrderId
+                }).ToList();
         }
 
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)
@@ -41,20 +58,21 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
             {
                 Id = x.Id,
                 InStock = x.InStock,
-                ProdcutId = x.ProductId,
+                ProductId = x.ProductId,
                 UnitPrice = x.UnitPrice,
-                CurrentCount = x.CalculateCurrentCount(),
-                Prodcut = products.FirstOrDefault(p => p.Id == x.ProductId).Name
+                CreationDate = x.CreationDate.ToFarsi(),
+                CurrentCount = x.CalculateCurrentCount()
             });
 
-            if (searchModel.ProdcutId > 0)
-                query = query.Where(x => x.ProdcutId == searchModel.ProdcutId);
-            if (!searchModel.InStock)
+            if (searchModel.ProductId > 0)
+                query = query.Where(x => x.ProductId == searchModel.ProductId);
+
+            if (searchModel.InStock)
                 query = query.Where(x => !x.InStock);
 
             var inventory = query.OrderByDescending(x => x.Id).ToList();
 
-            //inventory.ForEach(x => x.Prodcut = products.FirstOrDefault(p => p.Id == x.ProdcutId)?.Name);
+            inventory.ForEach(x => x.Product = products.FirstOrDefault(p => p.Id == x.ProductId)?.Name);
 
             return inventory;
         }

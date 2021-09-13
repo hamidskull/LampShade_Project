@@ -204,3 +204,11 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Inventor
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contracts.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Create.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Edit.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Index.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Increase.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Reduce.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\OperationLog.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoriesWithProducts\_ProductCategoriesWithProducts.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestProducts\_LatestProducts.cshtml.g.cs

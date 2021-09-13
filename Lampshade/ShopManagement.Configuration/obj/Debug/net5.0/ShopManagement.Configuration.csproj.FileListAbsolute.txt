@@ -23,3 +23,15 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debu
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contracts.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contracts.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contracts.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contracts.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb

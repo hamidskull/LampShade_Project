@@ -33,6 +33,12 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+              },
               "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
@@ -524,6 +530,9 @@
             "projectReferences": {
               "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
                 "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
