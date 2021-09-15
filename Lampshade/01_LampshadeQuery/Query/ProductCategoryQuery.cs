@@ -36,7 +36,7 @@ namespace _01_LampshadeQuery.Query
                     Id = x.Id,
                     Name = x.Name,
                     Products = MapProducts(x.Products)
-                }).ToList();
+                }).AsNoTracking().ToList();
 
             //categories.ForEach(cat => cat.Products.ForEach
             //(p=>p.Price = inventory.FirstOrDefault(x=>x.ProductId==p.Id)?.UnitPrice.ToMoney()));
@@ -108,14 +108,15 @@ namespace _01_LampshadeQuery.Query
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug
-            }).ToList();
+            }).AsNoTracking().ToList();
         }
 
         public ProductCategoryQueryModel GetProductCategoryProductsBy(string slug)
         {
             var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice }).ToList();
-            var productDiscountRate = _discountContext.CustomerDiscounts.Select(x =>
-            new { x.ProductId, x.DiscountRate, x.EndDate }).ToList();
+            var productDiscountRate = _discountContext.CustomerDiscounts
+                .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
+                .Select(x => new { x.ProductId, x.DiscountRate, x.EndDate }).ToList();
 
             var category = _context.ProductCategories.Include(x => x.Products).ThenInclude(x => x.Category)
                 .Select(x => new ProductCategoryQueryModel
@@ -127,7 +128,7 @@ namespace _01_LampshadeQuery.Query
                     MetaDescription = x.MetaDescription,
                     Slug = x.Slug,
                     Products = MapProducts(x.Products)
-                }).FirstOrDefault(x => x.Slug == slug);
+                }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
             category.Products.ForEach(p =>
             {
@@ -139,7 +140,7 @@ namespace _01_LampshadeQuery.Query
 
                     var productDisRate = productDiscountRate.FirstOrDefault(x => x.ProductId == p.Id);
                     if (productDisRate != null)
-                    {                                                        
+                    {
                         p.DiscountExpireDate = productDisRate.EndDate.ToDiscountFormat();
 
                         var discountRate = productDisRate.DiscountRate;

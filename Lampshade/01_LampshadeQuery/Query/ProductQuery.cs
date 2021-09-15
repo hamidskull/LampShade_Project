@@ -37,7 +37,7 @@ namespace _01_LampshadeQuery.Query
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug
-            }).OrderByDescending(x => x.Id).Take(6).ToList();
+            }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList();
 
             products.ForEach(p =>
             {
@@ -50,6 +50,60 @@ namespace _01_LampshadeQuery.Query
                     var productDisRate = productDiscountRate.FirstOrDefault(x => x.ProductId == p.Id);
                     if (productDisRate != null)
                     {
+                        var discountRate = productDisRate.DiscountRate;
+                        p.DiscountRate = discountRate;
+
+                        p.HasDiscount = p.DiscountRate > 0;
+
+                        var discountAmount = Math.Round((price * discountRate) / 100);
+                        p.PriceWithDiscount = (price - discountAmount).ToMoney();
+                    }
+                }
+            });
+
+            return products;
+        }
+
+        public List<ProductQueryModel> Search(string value)
+        {
+            var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice }).ToList();
+            var productDiscountRate = _discountContext.CustomerDiscounts
+                .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
+                .Select(x => new { x.ProductId, x.DiscountRate, x.EndDate }).ToList();
+
+            var query = _context.Products
+                .Include(x => x.Category)
+                .Select(x => new ProductQueryModel
+                {
+                    Id = x.Id,
+                    Category = x.Category.Name,
+                    CategorySlug = x.Category.Slug,
+                    Name = x.Name,
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
+                    Slug = x.Slug,
+                    ShortDescription = x.ShortDescription
+                }).AsNoTracking();
+
+            if (!string.IsNullOrEmpty(value))
+                query = query.Where(x => x.Name.Contains(value) || x.ShortDescription.Contains(value));
+
+            var products = query.OrderByDescending(x => x.Id).ToList();
+
+            products.ForEach(p =>
+            {
+                var inventoyProduct = inventory.FirstOrDefault(x => x.ProductId == p.Id);
+                if (inventoyProduct != null)
+                {
+                    var price = inventoyProduct.UnitPrice;
+                    p.Price = price.ToMoney();
+
+                    var productDisRate = productDiscountRate.FirstOrDefault(x => x.ProductId == p.Id);
+                    if (productDisRate != null)
+                    {
+                        p.DiscountExpireDate = productDisRate.EndDate.ToDiscountFormat();
+
                         var discountRate = productDisRate.DiscountRate;
                         p.DiscountRate = discountRate;
 
