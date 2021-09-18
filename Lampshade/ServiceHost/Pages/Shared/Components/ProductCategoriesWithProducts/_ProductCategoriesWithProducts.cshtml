@@ -65,14 +65,14 @@
                                                         <div class="single-grid-product__label">
                                                             <span class="sale">-@product.DiscountRate%s</span>
                                                         </div>
-                                                        <a href="single-product.html">
-                                                            <img src="@product.Picture" title="@product.PictureTitle" class="img-fluid" alt="@product.PictureAlt">
+                                                        <a asp-page="/Product" asp-route-id="@product.Slug">
+                                                            <img src="~/SitePictures/@product.Picture" title="@product.PictureTitle" class="img-fluid" alt="@product.PictureAlt">
                                                         </a>
                                                     </div>
                                                     <div class="single-grid-product__content">
                                                         <div class="single-grid-product__category-rating">
                                                             <span class="category">
-                                                                <a href="shop-left-sidebar.html">@product.Category</a>
+                                                                <a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a>
                                                             </span>
                                                             <span class="rating">
                                                                 <i class="ion-android-star active"></i>
@@ -84,7 +84,7 @@
                                                         </div>
 
                                                         <h3 class="single-grid-product__title">
-                                                            <a href="single-product.html">
+                                                            <a  asp-page="/Product" asp-route-id="@product.Slug">
                                                                 @product.Name
                                                             </a>
                                                         </h3>
@@ -99,7 +99,7 @@
                                                                 <span class="main-price">@product.Price تومان</span>
 
                                                             }
-                                                            
+
                                                         </p>
 
                                                     </div>

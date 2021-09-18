@@ -40,7 +40,7 @@ namespace ShopManagement.Domain.ProductAgg
             CategoryId = categoryId;
             ProductPictures = new List<ProductPicture>();
         }
-        public void Edit(string name, string code,  string shortDescription, string description,
+        public void Edit(string name, string code, string shortDescription, string description,
             string picture, string pictureAlt, string pictureTitle, string slug, string metaDescription,
             string keyWords, long categoryId)
         {
@@ -48,7 +48,10 @@ namespace ShopManagement.Domain.ProductAgg
             Code = code;
             ShortDescription = shortDescription;
             Description = description;
-            Picture = picture;
+
+            if (!string.IsNullOrWhiteSpace(picture))
+                Picture = picture;
+
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             Slug = slug;

@@ -3,6 +3,7 @@ using _01_LampshadeQuery.Contracts.Prodcut;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,68 @@ namespace _01_LampshadeQuery.Query
             _context = context;
             _inventoryContext = inventoryContext;
             _discountContext = discountContext;
+        }
+
+        public ProductQueryModel GetDetails(string slug)
+        {
+            var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice, x.InStock }).ToList();
+            var productDiscountRate = _discountContext.CustomerDiscounts.Select(x => new { x.ProductId, x.DiscountRate, x.EndDate }).ToList();
+
+            var product = _context.Products.Include(x => x.Category).Select(x => new ProductQueryModel
+            {
+                Id = x.Id,
+                Category = x.Category.Name,
+                Name = x.Name,
+                Picture = x.Picture,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle,
+                Slug = x.Slug,
+                CategorySlug = x.Category.Slug,
+                Code = x.Code,
+                Description = x.Code,
+                Keywords = x.Keywords,
+                MetaDescription = x.MetaDescription,
+                ShortDescription = x.ShortDescription,
+                Pictures = MapProductPictures(x.ProductPictures)
+            }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
+
+            if (product == null)
+                return new ProductQueryModel();
+
+            var inventoyProduct = inventory.FirstOrDefault(x => x.ProductId == product.Id);
+            if (inventoyProduct != null)
+            {
+                product.IsInStock = inventoyProduct.InStock;
+                var price = inventoyProduct.UnitPrice;
+                product.Price = price.ToMoney();
+
+                var productDisRate = productDiscountRate.FirstOrDefault(x => x.ProductId == product.Id);
+                if (productDisRate != null)
+                {
+                    var discountRate = productDisRate.DiscountRate;
+                    product.DiscountRate = discountRate;
+                    product.DiscountExpireDate = productDisRate.EndDate.ToDiscountFormat();
+
+                    product.HasDiscount = product.DiscountRate > 0;
+
+                    var discountAmount = Math.Round((price * discountRate) / 100);
+                    product.PriceWithDiscount = (price - discountAmount).ToMoney();
+                }
+            }
+
+            return product;
+        }
+
+        private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> productPictures)
+        {
+            return productPictures.Select(x => new ProductPictureQueryModel
+            {
+                IsRemove = x.IsRemoved,
+                Picture = x.Picture,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle,
+                ProductId = x.ProductId
+            }).Where(x => !x.IsRemove).ToList();
         }
 
         public List<ProductQueryModel> GetLatestProducts()
