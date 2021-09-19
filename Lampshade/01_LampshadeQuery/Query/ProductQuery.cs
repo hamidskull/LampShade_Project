@@ -3,6 +3,7 @@ using _01_LampshadeQuery.Contracts.Prodcut;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 using System;
@@ -29,23 +30,27 @@ namespace _01_LampshadeQuery.Query
             var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice, x.InStock }).ToList();
             var productDiscountRate = _discountContext.CustomerDiscounts.Select(x => new { x.ProductId, x.DiscountRate, x.EndDate }).ToList();
 
-            var product = _context.Products.Include(x => x.Category).Select(x => new ProductQueryModel
-            {
-                Id = x.Id,
-                Category = x.Category.Name,
-                Name = x.Name,
-                Picture = x.Picture,
-                PictureAlt = x.PictureAlt,
-                PictureTitle = x.PictureTitle,
-                Slug = x.Slug,
-                CategorySlug = x.Category.Slug,
-                Code = x.Code,
-                Description = x.Code,
-                Keywords = x.Keywords,
-                MetaDescription = x.MetaDescription,
-                ShortDescription = x.ShortDescription,
-                Pictures = MapProductPictures(x.ProductPictures)
-            }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
+            var product = _context.Products
+                .Include(x => x.Category)
+                .Include(x => x.Comments)
+                .Select(x => new ProductQueryModel
+                {
+                    Id = x.Id,
+                    Category = x.Category.Name,
+                    Name = x.Name,
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
+                    Slug = x.Slug,
+                    CategorySlug = x.Category.Slug,
+                    Code = x.Code,
+                    Description = x.Description,
+                    Keywords = x.Keywords,
+                    MetaDescription = x.MetaDescription,
+                    ShortDescription = x.ShortDescription,
+                    Comments = MapProdcutComments(x.Comments),
+                    Pictures = MapProductPictures(x.ProductPictures)
+                }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
             if (product == null)
                 return new ProductQueryModel();
@@ -72,6 +77,19 @@ namespace _01_LampshadeQuery.Query
             }
 
             return product;
+        }
+
+        private static List<CommentQueryModel> MapProdcutComments(List<Comment> comments)
+        {
+            return comments
+                .Where(x => x.IsConfirmed)
+                .Where(x => !x.IsCanceled)
+                .Select(x => new CommentQueryModel
+                {
+                    Id = x.Id,
+                    Message = x.Message,
+                    Name = x.Name
+                }).OrderByDescending(x => x.Id).ToList();
         }
 
         private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> productPictures)
