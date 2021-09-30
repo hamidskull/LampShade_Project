@@ -33,6 +33,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              },
               "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               },
@@ -376,6 +379,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              },
               "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj"
               },
