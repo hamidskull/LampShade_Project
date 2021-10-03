@@ -1,4 +1,6 @@
-﻿namespace _01_LampshadeQuery.Contracts.Article
+﻿using System.Collections.Generic;
+
+namespace _01_LampshadeQuery.Contracts.Article
 {
     public class ArticleQueryModel
     {
@@ -12,6 +14,7 @@
         public string PictureTitle { get; set; }
         public string Slug { get; set; }
         public string Keywords { get; set; }
+        public List<string> KeywordsList { get; set; }
         public string MetaDescription { get; set; }
         public string CanonicalAddress { get; set; }
         public string PublishDate { get; set; }

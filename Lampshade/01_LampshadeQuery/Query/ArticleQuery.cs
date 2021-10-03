@@ -17,6 +17,34 @@ namespace _01_LampshadeQuery.Query
             _context = context;
         }
 
+        public ArticleQueryModel GetArticleDetails(string slug)
+        {
+            var article = _context.Articles
+                .Include(x => x.Category)
+                .Select(x => new ArticleQueryModel
+                {
+                    Id = x.Id,
+                    Slug = x.Slug,
+                    CanonicalAddress = x.CanonicalAddress,
+                    CategoryName = x.Category.Name,
+                    CategorySlug = x.Category.Slug,
+                    Description = x.Description,
+                    Keywords = x.Keywords,
+                    MetaDescription = x.MetaDescription,
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
+                    PublishDate = x.PublishDate.ToFarsi(),
+                    ShortDescription = x.ShortDescription,
+                    Title = x.Title
+                }).FirstOrDefault(x => x.Slug == slug);
+
+            if (!string.IsNullOrEmpty(article.Keywords))
+                article.KeywordsList = article.Keywords.Split(",").ToList();
+
+            return article;
+        }
+
         public List<ArticleQueryModel> LatestArticles()
         {
             return _context.Articles
@@ -25,15 +53,8 @@ namespace _01_LampshadeQuery.Query
                 .Select(x => new ArticleQueryModel
                 {
                     Id = x.Id,
-                    CategoryId = x.CategoryId,
-                    CanonicalAddress = x.CanonicalAddress,
-                    CategoryName = x.Category.Name,
-                    CategorySlug = x.Category.Slug,
                     PublishDate = x.PublishDate.ToFarsi(),
                     Slug = x.Slug,
-                    Description = x.Description,
-                    Keywords = x.Keywords,
-                    MetaDescription = x.MetaDescription,
                     Picture = x.Picture,
                     PictureAlt = x.PictureAlt,
                     PictureTitle = x.PictureTitle,

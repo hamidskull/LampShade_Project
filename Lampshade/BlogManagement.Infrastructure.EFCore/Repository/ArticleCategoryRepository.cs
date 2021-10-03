@@ -49,16 +49,18 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
 
         public List<ArticleCategoryViewModel> Search(ArticleCategorySearchModel searchModel)
         {
-            var query = _context.ArticleCategories.Select(x => new ArticleCategoryViewModel
-            {
-                Id = x.Id,
-                Description = x.Description,
-                Name = x.Name,
-                Picture = x.Picture,
-                CreationDate = x.CreationDate.ToFarsi(),
-                ShowOrder = x.ShowOrder,
-                ArticlesCount = _context.ArticleCategories.Count()
-            }).AsNoTracking();
+            var query = _context.ArticleCategories
+                .Include(x => x.Articles)
+                .Select(x => new ArticleCategoryViewModel
+                {
+                    Id = x.Id,
+                    Description = x.Description,
+                    Name = x.Name,
+                    Picture = x.Picture,
+                    CreationDate = x.CreationDate.ToFarsi(),
+                    ShowOrder = x.ShowOrder,
+                    ArticlesCount = _context.ArticleCategories.Count()
+                }).AsNoTracking();
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
