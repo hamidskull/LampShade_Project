@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using _01_LampshadeQuery.Contracts.Comment;
+using System.Collections.Generic;
 
 namespace _01_LampshadeQuery.Contracts.Prodcut
 {
@@ -25,19 +26,5 @@ namespace _01_LampshadeQuery.Contracts.Prodcut
         public bool IsInStock { get; set; }
         public List<ProductPictureQueryModel> Pictures { get; set; }
         public List<CommentQueryModel> Comments { get; set; }
-    }
-    public class ProductPictureQueryModel
-    {
-        public long ProductId { get; set; }
-        public string Picture { get; set; }
-        public string PictureAlt { get; set; }
-        public string PictureTitle { get; set; }
-        public bool IsRemove { get; set; }
-    }
-    public class CommentQueryModel
-    {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public string Message { get; set; }
     }
 }

@@ -32,7 +32,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x => x.Id == id);
         }
 
-        List<SlideViewModel> ISlideRepository.GetList()
+        List<SlideViewModel> ISlideRepository.GetSlideList()
         {
             return _context.Slides.Select(x => new SlideViewModel
             {

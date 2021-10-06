@@ -41,3 +41,9 @@ C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configu
 C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Domain.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Domain.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.pdb

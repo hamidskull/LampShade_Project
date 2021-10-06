@@ -57,7 +57,7 @@ namespace ShopManagement.Application
 
         public List<SlideViewModel> GetSlides()
         {
-            return _slideRepository.GetList();
+            return _slideRepository.GetSlideList();
         }
 
         public OperationResult Remove(long id)
