@@ -4,8 +4,12 @@ C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\D
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\InventoryManagement.Application.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\0_Framework.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\InventoryManagement.Application.Contracts.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\InventoryManagement.Application.Contracts.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\0_Framework.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.csproj.AssemblyReference.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.AssemblyInfoInputs.cache
@@ -15,7 +19,3 @@ C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\D
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\ref\InventoryManagement.Application.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.pdb
-C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\InventoryManagement.Domain.dll
-C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
-C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\InventoryManagement.Domain.pdb
-C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
