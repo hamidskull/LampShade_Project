@@ -261,3 +261,12 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceH
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Create.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Edit.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Index.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\ChangePassword.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Create.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Edit.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Index.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\AccessDenied.cshtml.g.cs

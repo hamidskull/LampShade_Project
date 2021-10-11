@@ -12,3 +12,4 @@ C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Application.Contracts\
 C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Application.Contracts\obj\Debug\net5.0\BlogManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Application.Contracts\obj\Debug\net5.0\ref\BlogManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Application.Contracts\obj\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\BlogManagement.Application.Contracts\obj\Debug\net5.0\BlogManagement.Application.Contracts.csproj.AssemblyReference.cache
