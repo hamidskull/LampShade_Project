@@ -59,7 +59,9 @@ namespace ServiceHost
                     o.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/AccessDenied");
                 });
 
-            services.AddRazorPages();
+            services.AddRazorPages()
+                    .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>());
+                    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

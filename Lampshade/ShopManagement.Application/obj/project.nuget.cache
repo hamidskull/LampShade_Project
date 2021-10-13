@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bJVsmBWU6PZ4s2FmUNvlO7X7iCjthi/lt+15FtSQMunm7eA5RZcBgE/hV82AMgQZOawxl7PmPiZwqZo8PruDmw==",
+  "dgSpecHash": "vn6JRbbMLUaZXy1udzNRBYzaD8v2fJr/pSD+gPnuFZ5KRQBTWXqNnQxO7Um6LWQ38Lf3UEsI0ez0c+ajsgWloA==",
   "success": true,
   "projectFilePath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\HAMID\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\HAMID\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\HAMID\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\HAMID\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",

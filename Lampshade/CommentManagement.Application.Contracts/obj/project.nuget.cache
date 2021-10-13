@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tP1la2KjaQ6haRbnI7IL0ayw2t1jkxSp+TiXwC2ih2glmRPHSMhDcPinaJHw487GEwBUiG/tNFwgYP6NcoWlWQ==",
+  "dgSpecHash": "GaV3vDXIoL0HQvT0E+vnVotU278iULhuAOOQ6hMvJvoY1MmW33Ry/TFEEXu84W7pb7yEnRxwrlnTT5wMco6kFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\HAMID\\source\\repos\\Code\\Lampshade\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\HAMID\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\HAMID\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\HAMID\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\HAMID\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
