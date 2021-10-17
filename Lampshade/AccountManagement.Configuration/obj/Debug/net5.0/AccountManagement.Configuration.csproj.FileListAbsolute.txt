@@ -17,7 +17,7 @@ C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\D
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.csproj.CoreCompileInputs.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\ref\AccountManagement.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.csproj.CopyComplete

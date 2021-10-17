@@ -1716,8 +1716,7 @@
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "CommentManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
-          "InventoryManagement.Infrastructure.EFCore": "1.0.0",
-          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+          "InventoryManagement.Infrastructure.EFCore": "1.0.0"
         },
         "compile": {
           "bin/placeholder/01_LampshadeQuery.dll": {}
@@ -6441,7 +6440,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

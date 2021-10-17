@@ -92,6 +92,46 @@ namespace AccountManagement.Infrastructure.EFCore.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.OwnsMany("AccountManagement.Domain.AccountAgg.AccountRole", "AccountRoles", b1 =>
+                        {
+                            b1.Property<long>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("bigint")
+                                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                            b1.Property<long>("AccountId")
+                                .HasColumnType("bigint");
+
+                            b1.Property<DateTime>("CreationDate")
+                                .HasColumnType("datetime2");
+
+                            b1.Property<long>("RoleId")
+                                .HasColumnType("bigint");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("AccountId");
+
+                            b1.HasIndex("RoleId");
+
+                            b1.ToTable("UserRoles");
+
+                            b1.WithOwner("Account")
+                                .HasForeignKey("AccountId");
+
+                            b1.HasOne("AccountManagement.Domain.RoleAgg.Role", "Role")
+                                .WithMany()
+                                .HasForeignKey("RoleId")
+                                .OnDelete(DeleteBehavior.Cascade)
+                                .IsRequired();
+
+                            b1.Navigation("Account");
+
+                            b1.Navigation("Role");
+                        });
+
+                    b.Navigation("AccountRoles");
+
                     b.Navigation("Role");
                 });
 

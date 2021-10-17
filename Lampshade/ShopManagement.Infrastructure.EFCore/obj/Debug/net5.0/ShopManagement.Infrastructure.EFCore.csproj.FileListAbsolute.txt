@@ -15,7 +15,6 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.EFCore.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb

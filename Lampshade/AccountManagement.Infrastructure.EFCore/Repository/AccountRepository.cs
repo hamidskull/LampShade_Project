@@ -18,6 +18,7 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
         public Account GetBy(string username)
         {
+
             return _context.Accounts.FirstOrDefault(x => x.Username == username);
         }
 
@@ -29,7 +30,8 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
                 Fullname = x.Fullname,
                 Mobile = x.Mobile,
                 Username = x.Username,
-                RoleId = x.RoleId
+                //  RoleId = x.RoleId
+                RoleId = x.AccountRoles.Select(x => x.RoleId).ToList()
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -59,9 +61,7 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
             if (searchModel.RoleId > 0)
                 query = query.Where(x => x.RoleId == searchModel.RoleId);
 
-
             return query.OrderByDescending(x => x.Id).ToList();
-
         }
     }
 }

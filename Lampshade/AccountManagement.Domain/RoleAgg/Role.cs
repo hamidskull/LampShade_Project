@@ -10,12 +10,18 @@ namespace AccountManagement.Domain.RoleAgg
         public List<Account> Accounts { get; private set; }
         public List<Permission> Permissions { get; private set; }
 
+        //for many role
+        public List<AccountRole> AccountRoles { get; private set; }
+
+
         protected Role() { }
         public Role(string name, List<Permission> permissions)
         {
             Name = name;
             Accounts = new List<Account>();
             Permissions = permissions;
+
+            AccountRoles = new List<AccountRole>();
         }
         public void Edit(string name, List<Permission> permissions)
         {

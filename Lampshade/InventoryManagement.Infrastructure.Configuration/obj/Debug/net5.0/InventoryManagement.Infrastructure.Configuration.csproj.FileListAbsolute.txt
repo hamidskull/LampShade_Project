@@ -23,7 +23,6 @@ C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Co
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.csproj.CoreCompileInputs.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\ref\InventoryManagement.Infrastructure.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb

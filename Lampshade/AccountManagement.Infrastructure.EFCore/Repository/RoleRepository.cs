@@ -43,10 +43,39 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
                 CreationDate = x.CreationDate.ToFarsi()
             }).ToList();
         }
-                                                 
+
         public List<int> GetRolePermissions(long roleId)
         {
             return _context.Roles.FirstOrDefault(x => x.Id == roleId).Permissions.Select(x => x.Code).ToList();
+        }
+
+        public List<int> GetAccountRolePermissions(long accountId)
+        {
+            //var userRoles = _context.AccountRoles.Include(x => x.Role).Where(x => x.AccountId == accountId).ToList();
+
+
+            //var userPermissions = new List<int>();
+
+            //userRoles.ForEach(x => userPermissions.AddRange(x.Role.Permissions.Select(x => x.Code)));
+
+
+            //return userPermissions;
+
+
+            var userPermissions = new List<int>();
+            var list = _context.Accounts.FirstOrDefault(x => x.Id == accountId).AccountRoles;
+
+            //foreach (var item in list)
+            //{
+            //    userPermissions.AddRange(_context.Roles.FirstOrDefault(x => x.Id == item.RoleId).Permissions.Select(x => x.Code));
+            //}
+
+            list.ForEach(y => userPermissions.AddRange(
+                _context.Roles.Select(x => new { x.Id, x.Permissions }).AsNoTracking()
+                .FirstOrDefault(x => x.Id == y.RoleId)
+                .Permissions.Select(x => x.Code)));
+
+            return userPermissions;
         }
     }
 }

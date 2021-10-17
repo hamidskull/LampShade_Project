@@ -9,5 +9,6 @@ namespace AccountManagement.Domain.RoleAgg
         List<RoleViewModel> RoleList();
         EditRole GetDetails(long id);
         List<int> GetRolePermissions(long roleId);
+        List<int> GetAccountRolePermissions(long accountId);
     }
 }

@@ -21,7 +21,6 @@ C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFC
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\DiscountManagement.Infrastructure.EFCore.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb

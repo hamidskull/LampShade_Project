@@ -15,7 +15,6 @@ C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\D
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.csproj.CoreCompileInputs.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\ref\InventoryManagement.Application.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.pdb

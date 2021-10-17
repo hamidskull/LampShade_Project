@@ -13,6 +13,8 @@ namespace AccountManagement.Infrastructure.EFCore.Mapping
 
             builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
 
+            builder.Ignore(x => x.AccountRoles);
+
             builder.HasMany(x => x.Accounts).WithOne(x => x.Role).HasForeignKey(x => x.RoleId);
 
             builder.OwnsMany(x => x.Permissions, modelBuilder =>
@@ -22,6 +24,17 @@ namespace AccountManagement.Infrastructure.EFCore.Mapping
                 modelBuilder.Ignore(x => x.Name);
                 modelBuilder.WithOwner(x => x.Role).HasForeignKey(x => x.RoleId);
             });
+
+            //builder.OwnsMany(x => x.AccountRoles, model =>
+            //{
+            //    model.ToTable("UserRoles");
+            //    model.HasKey(x => x.RoleId);
+            //    model.WithOwner(x => x.Role).HasForeignKey(x => x.RoleId);
+
+            //});
+
+            ////add for many roles
+            //builder.HasMany(x => x.AccountRoles).WithOne(x => x.Role).HasForeignKey(x => x.RoleId);
         }
     }
 }

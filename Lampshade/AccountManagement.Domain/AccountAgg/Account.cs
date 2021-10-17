@@ -1,5 +1,6 @@
 ﻿using _0_Framework.Domain;
 using AccountManagement.Domain.RoleAgg;
+using System.Collections.Generic;
 
 namespace AccountManagement.Domain.AccountAgg
 {
@@ -13,6 +14,9 @@ namespace AccountManagement.Domain.AccountAgg
         public Role Role { get; private set; }
         public string ProfilePhoto { get; private set; }
 
+        //for many role
+        public List<AccountRole> AccountRoles { get; private set; }
+
         public Account(string fullname, string username, string password, string mobile, long roleId, string profilePhoto)
         {
             Fullname = fullname;
@@ -23,11 +27,14 @@ namespace AccountManagement.Domain.AccountAgg
 
             if (roleId == 0)
                 RoleId = 2;
- 
+
             ProfilePhoto = profilePhoto;
+
+            AccountRoles = new List<AccountRole>();
         }
 
-        public void Edit(string fullname, string username, string mobile, long roleId, string profilePhoto)
+        public void Edit(string fullname, string username, string mobile, long roleId, string profilePhoto,
+            List<AccountRole> accountRoles)
         {
             Fullname = fullname;
             Username = username;
@@ -36,7 +43,10 @@ namespace AccountManagement.Domain.AccountAgg
 
             if (!string.IsNullOrWhiteSpace(profilePhoto))
                 ProfilePhoto = profilePhoto;
+
+            AccountRoles = accountRoles;
         }
+
         public void ChangePassword(string password)
         {
             Password = password;

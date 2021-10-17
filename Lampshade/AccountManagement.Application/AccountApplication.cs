@@ -52,8 +52,11 @@ namespace AccountManagement.Application
             var path = "ProfilePhotos";
             var picturePath = _fileUploader.Upload(command.ProfilePhoto, path);
 
+            //var account = new Account(command.Fullname, command.Username, password, command.Mobile,
+            //    command.RoleId, picturePath);
+
             var account = new Account(command.Fullname, command.Username, password, command.Mobile,
-                command.RoleId, picturePath);
+               2, picturePath);
 
             _accountRepository.Create(account);
             _accountRepository.SaveChanges();
@@ -76,8 +79,18 @@ namespace AccountManagement.Application
             var path = "ProfilePhotos";
             var picturePath = _fileUploader.Upload(command.ProfilePhoto, path);
 
+            //for many role
+            var accountRoles = new List<AccountRole>();
+            command.RoleId.ForEach(x => accountRoles.Add(new AccountRole(command.Id, x)));
+
+
+            //account.Edit(command.Fullname, command.Username, command.Mobile,
+            //   command.RoleId, picturePath,accountRoles);
+
             account.Edit(command.Fullname, command.Username, command.Mobile,
-               command.RoleId, picturePath);
+             2, picturePath, accountRoles);
+
+
 
             _accountRepository.SaveChanges();
 
@@ -102,7 +115,12 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessages.WrongUserPass);
 
             //var permissions = _roleRepository.Get(account.RoleId).Permissions.Select(x => x.Code).ToList();
-            var permissions = _roleRepository.GetRolePermissions(account.RoleId);
+
+            //for one role
+            //var permissions = _roleRepository.GetRolePermissions(account.RoleId);
+
+            //fro many roles
+            var permissions = _roleRepository.GetAccountRolePermissions(account.Id);
 
             var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username, account.Mobile, permissions);
             _authHelper.Signin(authViewModel);
