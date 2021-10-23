@@ -15,6 +15,7 @@ C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCo
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\CommentManagement.Infrastructure.EFCore.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.pdb

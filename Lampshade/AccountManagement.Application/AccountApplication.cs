@@ -119,10 +119,11 @@ namespace AccountManagement.Application
             //for one role
             //var permissions = _roleRepository.GetRolePermissions(account.RoleId);
 
-            //fro many roles
+            //for many roles
             var permissions = _roleRepository.GetAccountRolePermissions(account.Id);
 
-            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username, account.Mobile, permissions);
+            //var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username, account.Mobile, permissions);
+            var authViewModel = new AuthViewModel(account.Id, account.AccountRoles[0].RoleId, account.Fullname, account.Username, account.Mobile, permissions);
             _authHelper.Signin(authViewModel);
 
             return operation.Successed();

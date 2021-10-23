@@ -1,12 +1,3 @@
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.csproj.AssemblyReference.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfoInputs.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfo.cs
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.csproj.CoreCompileInputs.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cache
-C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\appsettings.json
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ServiceHost.exe
@@ -28,12 +19,15 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsof
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -49,6 +43,7 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsof
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Nancy.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Composition.AttributedModel.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Composition.Convention.dll
@@ -191,6 +186,15 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopMana
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.csproj.AssemblyReference.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfoInputs.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfo.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\staticwebassets\ServiceHost.StaticWebAssets.Manifest.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\staticwebassets\ServiceHost.StaticWebAssets.xml
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\scopedcss\bundle\ServiceHost.styles.css
@@ -245,6 +249,7 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pa
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
@@ -270,3 +275,4 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceH
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\PaymentCheck.cshtml.g.cs

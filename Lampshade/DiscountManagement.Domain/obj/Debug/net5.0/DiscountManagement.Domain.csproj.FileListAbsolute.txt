@@ -13,6 +13,7 @@ C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\n
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\net5.0\ref\DiscountManagement.Domain.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.pdb

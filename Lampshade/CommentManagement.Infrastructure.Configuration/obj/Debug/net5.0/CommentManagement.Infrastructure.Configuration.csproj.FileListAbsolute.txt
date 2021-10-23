@@ -17,6 +17,7 @@ C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Conf
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.csproj.CoreCompileInputs.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\ref\CommentManagement.Infrastructure.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.pdb

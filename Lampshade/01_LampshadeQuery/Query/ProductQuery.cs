@@ -5,6 +5,7 @@ using CommentManagement.Infrastructure.EFCore;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 using System;
@@ -63,6 +64,7 @@ namespace _01_LampshadeQuery.Query
                 product.IsInStock = inventoyProduct.InStock;
                 var price = inventoyProduct.UnitPrice;
                 product.Price = price.ToMoney();
+                product.DoublePrice = price;
 
                 var productDisRate = productDiscountRate.FirstOrDefault(x => x.ProductId == product.Id);
                 if (productDisRate != null)
@@ -181,6 +183,7 @@ namespace _01_LampshadeQuery.Query
                 {
                     var price = inventoyProduct.UnitPrice;
                     p.Price = price.ToMoney();
+                    p.DoublePrice = price;
 
                     var productDisRate = productDiscountRate.FirstOrDefault(x => x.ProductId == p.Id);
                     if (productDisRate != null)
@@ -199,6 +202,20 @@ namespace _01_LampshadeQuery.Query
             });
 
             return products;
+        }
+
+        public List<CartItem> CheckInventoryStatus(List<CartItem> cartItems)
+        {
+            var inventory = _inventoryContext.Inventory.ToList();
+
+            foreach (var cardItem in cartItems.Where(cartItem =>
+            inventory.Any(x => x.ProductId == cartItem.Id && x.InStock)))
+            {
+                var itemInventory = inventory.Find(x => x.ProductId == cardItem.Id);
+                cardItem.IsInStock = itemInventory.CalculateCurrentCount() >= cardItem.Count;
+            }
+
+            return cartItems;
         }
     }
 }

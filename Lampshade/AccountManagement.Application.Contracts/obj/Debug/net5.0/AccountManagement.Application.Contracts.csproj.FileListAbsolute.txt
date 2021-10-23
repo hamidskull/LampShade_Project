@@ -9,6 +9,7 @@ C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contrac
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.AssemblyInfoInputs.cache
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.AssemblyInfo.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.csproj.CopyComplete
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contracts\obj\Debug\net5.0\ref\AccountManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.pdb

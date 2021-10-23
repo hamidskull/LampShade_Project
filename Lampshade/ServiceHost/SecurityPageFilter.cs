@@ -23,15 +23,12 @@ namespace ServiceHost
         {
             var handlerPermission = (NeedsPermissionsAttribute)context.HandlerMethod.MethodInfo
                 .GetCustomAttribute(typeof(NeedsPermissionsAttribute));
-            
+
             if (handlerPermission == null)
                 return;
 
             if (!_authHelper.GetPermissions().Contains(handlerPermission.Permission))
                 context.HttpContext.Response.Redirect("/AccessDenied");
-
-
-
         }
 
         public void OnPageHandlerSelected(PageHandlerSelectedContext context)
