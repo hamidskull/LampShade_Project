@@ -9,6 +9,8 @@ namespace _0_Framework.Application
         bool IsAuthenticated();
         string CurrentAccountRole();
         AuthViewModel CurrentAccountInfo();
-        List<int> GetPermissions(); 
+        List<int> GetPermissions();
+        long CurrentAccountId();
+        string CurrentAccountMobile();
     }
 }

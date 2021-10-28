@@ -27,3 +27,9 @@ C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Co
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\ref\InventoryManagement.Infrastructure.Configuration.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

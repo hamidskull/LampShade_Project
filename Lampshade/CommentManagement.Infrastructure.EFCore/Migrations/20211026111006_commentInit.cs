@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CommentManagement.Infrastructure.EFCore.Migrations
 {
-    public partial class SetForeignKeyToFalse : Migration
+    public partial class commentInit : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
