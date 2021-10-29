@@ -282,3 +282,10 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopMana
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryACL.pdb
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Orders\Index.cshtml.g.cs
 C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Orders\Items.cshtml.g.cs
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Presentation.Api.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Presentation.Api.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Presentation.Api.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Presentation.Api.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\HAMID\source\repos\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
