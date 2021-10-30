@@ -12,3 +12,4 @@ C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Application.Contracts\
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ref\ShopManagement.Application.Contracts.dll
 C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+C:\Users\HAMID\source\repos\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.CopyComplete

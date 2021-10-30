@@ -1,4 +1,5 @@
 ﻿using _0_Framework.Application;
+using _0_Framework.Application.Sms;
 using Microsoft.Extensions.Configuration;
 using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Domain.OrderAgg;
@@ -9,18 +10,22 @@ namespace ShopManagement.Application
 {
     public class OrderApplication : IOrderApplication
     {
+        private readonly ISmsService _smsService;
         private readonly IAuthHelper _authHelper;
         private readonly IConfiguration _configuration;
+        private readonly IShopAccountACL _shopAccountACL;
         private readonly IOrderRepository _orderRepository;
         private readonly IShopInventoryACL _shopInventoryACL;
 
         public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper,
-            IConfiguration configuration, IShopInventoryACL shopInventoryACL)
+            IConfiguration configuration, IShopInventoryACL shopInventoryACL, ISmsService smsService, IShopAccountACL shopAccountACL)
         {
             _orderRepository = orderRepository;
             _authHelper = authHelper;
             _configuration = configuration;
             _shopInventoryACL = shopInventoryACL;
+            _smsService = smsService;
+            _shopAccountACL = shopAccountACL;
         }
 
         public void Cancel(long id)
@@ -48,10 +53,14 @@ namespace ShopManagement.Application
             var symbol = _configuration["Symbol"];
             var issueTrackingNo = CodeGenerator.Generate(symbol);
             order.SetIssueTrackingNo(issueTrackingNo);
-            
+
             if (!_shopInventoryACL.ReduceFromInventory(order.Items)) return "";
-            
+
             _orderRepository.SaveChanges();
+            var (fullname, mobile) = _shopAccountACL.GetAccountBy(order.AccountId);
+
+            _smsService.Send(mobile, $"{fullname} گرامی سفارش شما با شماره پیگیری {issueTrackingNo} با موفقیت پرداخت شد و ارسال خواهد شد.");
+
             return issueTrackingNo;
         }
 

@@ -143,5 +143,10 @@ namespace AccountManagement.Application
         {
             return _accountRepository.GetAccounts();
         }
+
+        public AccountViewModel GetAccountBy(long id)
+        {
+            return _accountRepository.GetAccountBy(id);
+        }
     }
 }
